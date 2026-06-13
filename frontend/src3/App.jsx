@@ -6,6 +6,8 @@ import Contact from "./pages/Contact"
 import Register from "./pages/Register"
 import Login from "./pages/Login"
 import Layout from "./Layout"
+import User from "./pages/User"
+import Notfound from "./pages/Notfound"
 
 
 
@@ -18,8 +20,9 @@ const App = () =>{
             <Route path="about" element ={<About/>}/>
             <Route path="contact" element ={<Contact/>}/>
             <Route path="register" element ={<Register/>}/>
+            <Route path="user/:id" element={<User/>}/>
             <Route path="login" element ={<Login/>}/>
-
+            <Route path="*" element={<Notfound/>}/>
             </Route>
         </Routes>
         </BrowserRouter>
